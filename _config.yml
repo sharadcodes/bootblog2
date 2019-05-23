@@ -42,7 +42,7 @@ toc:
   url: "/blog/"  
 - title: Categories
   url: "/categories/"
-- title: Projects
+- title: Dropdown
   subfolderitems:
   - page: This is a child
     url: "/about/"
