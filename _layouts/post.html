@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    {% include nav.html %}
+        
+    <div class="container jumbotron bg-transparent mb-0 radius-">
+        <div class="jumbotron">
+                <h1 class="display-3"><span class="vim-caret">{{ page.title }}</span></h1>
+                <hr>
+                    <p class="text-spacey lead">
+                            {{ content }}
+                    </p>
+        </div> 
+    </div>
+{% include scripts.html %}             
+</body>
+</html>  

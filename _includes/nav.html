@@ -1,0 +1,90 @@
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+          aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="{{site.url}}" style="">
+          <img src="{{site.baseurl}}/assets/img/{{site.logo}}" alt="" width="185px" height="35px">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+    
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        {% for item in site.toc %}
+      {% if item.subfolderitems %}	
+      
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      {{ item.title }}
+                </button>
+            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+            {% for entry in item.subfolderitems %}                        
+                <a class="dropdown-item text-light" href="{{ site.baseurl }}{{ entry.url }}">{{entry.page}}</a>
+            {% endfor %}
+                </div>
+            </div>
+
+                
+          {% else %}
+          <li class="nav-item">
+                <a class="nav-link  text-dark" href="{{ site.baseurl }}{{ item.url }}" style="">{{ item.title }}
+                  <span class="sr-only" >(current)</span>
+                </a>
+              </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    
+        </div>
+</nav>
+
+
+
+
+<!-- search input-->
+
+<div class="container" style="margin: 5% auto auto auto;">
+<form>
+    <div>
+      <input id="in_Default" type="text" placeholder="Search posts.." name="search" autocomplete="off">
+    </div>
+  </form>
+  
+  <br/>
+  <ol style="text-align: left!important;" id="results-container">
+  </ol>
+  
+  
+  
+  <style>
+  
+  input:focus, textarea:focus {
+      outline: none;
+  }
+  
+  form input {box-sizing:border-box}
+  
+  form > div {
+    position:relative;
+  }
+  
+  form input[type="text"] {
+    padding: 15px;
+    font-size: 17px;
+    float: none;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: 2px solid white;
+  }
+  
+  form input[type="text"]:hover {
+    border: 2px solid #714cdf;
+  }
+  </style>
+  </div>
+
+  <!-- search end-->

@@ -1,0 +1,7 @@
+
+
+{% for icons in site.author.contact %}
+<a href="{{ icons.url }}" class="btn btn-outline-dark nav-item">
+    <span class="fab fa-{{icons.title}} nav-link"></span>
+</a>           
+{% endfor %}
