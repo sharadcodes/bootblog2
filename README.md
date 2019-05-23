@@ -1,7 +1,7 @@
 # Bootblog 2
 
 >This is the version 2.0  of old jekyll theme that I made.
->Theme powered by bootstrap, has search and is has dark theming.
+>Theme powered by bootstrap, has search and has dark theming.
 
 **Don't forget to give a :star:**
 
