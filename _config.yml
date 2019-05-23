@@ -45,8 +45,6 @@ toc:
 - title: Projects
   subfolderitems:
   - page: This is a child
-    url: https://codingindian.netlify.com
-  - page: Another child
-    url: https://codingindian.netlify.com
+    url: "/about/"
   - page: Edit me in _config.yml
-    url: https://www.cwithsharad.cf
+    url: "/contact"
