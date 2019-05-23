@@ -22,7 +22,7 @@
 
 ## Demo
 
-- https://www.sharad.cf/bootblog
+- https://www.sharad.cf/bootblog2
 
 # Preview
 
