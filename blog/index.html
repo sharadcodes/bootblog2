@@ -14,7 +14,7 @@ layout: page
 <div class="jumbotron">
 	<h2>{{latest_post.title}}</h3>
             <p>
-                <a class="btn btn-lg btn-primary" href="{{latest_post.url}}" role="button">Read more»</a>
+                <a class="btn btn-lg btn-primary" href="{{site.baseurl}}/{{latest_post.url}}" role="button">Read more»</a>
             </p>	
 </div>
 {% endfor %}
@@ -26,7 +26,7 @@ layout: page
 				<li class="list-group-item">			    
 				<div class="row">				
 					<div class="col-lg-10" >	
-						<a class="text-white" href="{{post.url}}">{{ post.title | capitalize }}</a>
+						<a class="text-white" href="{{site.baseurl}}/{{post.url}}">{{ post.title | capitalize }}</a>
 					</div>
 					<div class="col-lg-2" >		
 						<span class="badge badge-primary" style="margin:1px;">Author: {{ post.author }}</span>	
@@ -52,7 +52,7 @@ layout: page
 				<li class="list-group-item">			    
 <div class="row">				
 	<div class="col-lg-10" >	
-						<a class="text-white" href="{{post.url}}">{{ post.title | capitalize }}</a>
+						<a class="text-white" href="{{site.baseurl}}/{{post.url}}">{{ post.title | capitalize }}</a>
 	</div>
 	<div class="col-lg-2" >		
 						<span class="badge badge-primary" style="margin:1px;">Author: {{ post.author }}</span>	
