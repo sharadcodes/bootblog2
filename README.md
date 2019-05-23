@@ -26,9 +26,9 @@
 
 # Preview
 
-## BLOG PAGE
+## BLOG PAGE WITH 2ND LEVEL NAVIGATION BAR
 ![Blog page](https://github.com/sharadcodes/bootblog2/raw/master/screenshots/blog.png)
-## CATEGORIES WITH 2ND LEVEL NAVIGATION BAR
+## CATEGORIES 
 ![Home page](https://github.com/sharadcodes/bootblog2/raw/master/screenshots/categories.png)
 ## EXAMPLE POST 
 ![Blog page](https://github.com/sharadcodes/bootblog2/raw/master/screenshots/post.png)
