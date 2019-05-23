@@ -16,8 +16,8 @@ defaults:
     author: Sharad Raj
 tagline: A complete jekyll site
 description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-baseurl: ""
-url: ""
+baseurl: "https://sharadcodes.github.io/bootblog2/"
+url: "https://sharadcodes.github.io/bootblog2/"
 logo: logo.png
 
 plugins_dir:
