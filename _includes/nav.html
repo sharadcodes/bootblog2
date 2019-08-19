@@ -4,10 +4,12 @@
           aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon"></span>
         </button>
+        {% if site.logo %}
         <a class="navbar-brand" href="{{site.url}}" style="">
           <img src="{{site.baseurl}}/assets/img/{{site.logo}}" alt="" width="185px" height="35px">
         </a>
-
+        {% endif %}
+        
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
     
